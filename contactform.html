@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/input-form.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Our contact form</h2>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="firstName">Firstname</label>
+          <input type="text" id="firstName" placeholder="Enter your firstname" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="lastName">Lastname</label>
+          <input type="text" id="lastName" placeholder="Enter your lastname" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="age">Age</label>
+          <input type="number" id="age" max="120" style="width:70px;" pattern="(1[2-9]|[2-9][0-9]))"/>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label>
+          <input type="Number" id="phone" placeholder="Enter your Phone Number" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="adress">Adress</label>
+          <input type="text" id="adress" placeholder="Enter your Adress" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter your Subject" />
+          <small>Error message</small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script/validate-inputs.js"></script>
+    <script src="script/network.js"></script>
+    <script src="script/ui.js"></script>
+  </body>
+
+  <footer>
+    <p class="footer">Copyright &copy; Sebastian Hamburger 2022</p>
+  </footer>
+</html>
